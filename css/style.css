@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300.woff2");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300italic.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300italic.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300italic.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300italic.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-300italic.woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600.woff2");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600italic.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600italic.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600italic.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600italic.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-600italic.woff2");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-700.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-700.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-700.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-700.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-700.woff2");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-800.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-800.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-800.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-800.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-800.woff2");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-italic.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-italic.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-italic.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-italic.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-italic.woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-regular.eot") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-regular.svg"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-regular.ttf") url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-regular.woff"), url("../assets/web-fonts/open-sans-v14/open-sans-v14-latin-regular.woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-600.eot"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-600.svg"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-600.ttf"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-600.woff") url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-600.woff2");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-700.eot"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-700.svg"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-700.ttf"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-700.woff"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-700.woff2");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-regular.eot"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-regular.svg"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-regular.ttf"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-regular.woff"), url("../assets/web-fonts/source-sans-pro-v11-latin/source-sans-pro-v11-latin-regular.woff2");
+  font-weight: normal;
+  font-style: normal; }
+@media only screen and (min-width: 641px) {
+  .main {
+    background-color: #FFFFFF; }
+
+  .landingText__title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: italic; } }
+
+/*# sourceMappingURL=style.css.map */
