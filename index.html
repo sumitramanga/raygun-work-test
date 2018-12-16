@@ -56,11 +56,64 @@
 				</div>
 
 				<div class="contentSwitcherContent frontEndContent" id="frontEndContent">
-					<h1>this is the frontEndContent</h1>
+					<p class="errorCrashesContent__text errorCrashesContent__text--first">
+						<span class="errorCrashesContent__text--step">Step 1:</span> Install the <span class="errorCrashesContent__text--library">library</span>
+					</p>
+					<p class="errorCrashesContent__text errorCrashesContent__text--second">
+						<span class="errorCrashesContent__text--step">Step 2:</span> Select your language & add this snippet to your markup
+					</p>
+					<div class="errorCrashesContent__textEditor">
+						<div class="textEditor__head">
+							<h3 class="textEditor__head__title">.NET Core</h3>
+						</div>
+						<div class="textEditor__body">
+							<ul class="textEditor__body__numberList">
+								<li class="textEditor__body__list__listItem">1.</li>
+								<li class="textEditor__body__list__listItem">2.</li>
+								<li class="textEditor__body__list__listItem">3.</li>
+								<li class="textEditor__body__list__listItem">4.</li>
+								<li class="textEditor__body__list__listItem">5.</li>
+							</ul>
+
+							<ul class="textEditor__body__codeList">
+								<li class="textEditor__body__listItem textEditor__body__listItem--comment">//Add this snippet before the closing <span></</span>head> tag</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code__tag"><</span><span class="code__jsTag">script</span>
+									<span class="code__jsAttr">type</span><span class="code__tag">="</span><span class="code__jsValue">text/javascript</span><span class="code__tag">"></span></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code"><span class="code__tag">!</span><span class="code__jsfunc">function</span><span class="code__tag">(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){</span></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">  <span class="code__tag">(a[e].o=a[e].o||[]).</span><span class="code__jsMethod">push</span><span class="code__tag">(arguments)},f=b.</span><span class="code__jsMethod">createElement</span><span class="code__tag">(c),g=b.</span><span class="code__jsMethod">getElementsByTagName</span><span class="code__tag">(c)[0],</span></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code__tag">f.</span>
+									<span class="code__jsfunc">async</span>
+									<span class="code__tag">=</span>
+									<span class="code__jsAsyncVal">1</span>
+									<span class="code__tag">,f.src=d,g.parentNode.</span>
+									<span class="code__jsMethod">insertBefore</span>
+									<span class="code__tag">(f,g)}(window,document,</span>
+									<span class="code__jsString">"script","//cdn.raygun.io/raygun4js/</span>
+								<span class="code__tag">raygun.min.js","rg4js");</span></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code"><span class="code__tag"><<span>/</span></span><span class="code__jsTag">script</span><span class="code__tag">></span> </li>
+								<!-- Need to widen the box of this bc the code is going on next line ( width: 1260px;)-->
+							</ul>
+						</div>
+					</div>
 				</div>
 
+
+				<!-- vertically center the steps -->
 				<div class="contentSwitcherContent serverSideContent" id="serverSideContent">
-					<h1>this is the serverSideContent</h1>
+					<div class="serverSideContent__step">
+						<p><span class="step__stepnum">Step 1</span> <span class="step__stepinstruct">Download the installer</span> </p>
+						<img src="assets/img/server-download.png" alt="Server Download">
+					</div>
+					<div class="serverSideContent__step">
+						<p><span class="step__stepnum">Step 2</span> <span class="step__stepinstruct">Install the agent</span> </p>
+						<img src="assets/img/agent-setup.png" alt="Server Download">
+					</div>
+					<div class="serverSideContent__step">
+						<p><span class="step__stepnum">Step 3</span> <span class="step__stepinstruct">Configure the agent</span> </p>
+						<img src="assets/img/agent-config.png" alt="Server Download">
+					</div>
 				</div>
 
 			</div>
