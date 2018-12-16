@@ -41,7 +41,7 @@
 								<li class="textEditor__body__list__listItem">5.</li>
 							</ul>
 
-							<ul class="textEditor__body__codeList">
+							<ul class="textEditor__body__codeList textEditor__body__codeList--erroAndCrashes">
 								<li class="textEditor__body__listItem textEditor__body__listItem--comment">//In your Web.config file, find configSections and add the following entry:</li>
 								<li class="textEditor__body__listItem textEditor__body__listItem--code">
 									<span class="code--tag"><</span><span class="code--tag">section</span>
@@ -75,34 +75,27 @@
 								<li class="textEditor__body__list__listItem">5.</li>
 							</ul>
 
-							<ul class="textEditor__body__codeList">
-								<li class="textEditor__body__listItem textEditor__body__listItem--comment">//Add this snippet before the closing <span></</span>head> tag</li>
-								<li class="textEditor__body__listItem textEditor__body__listItem--code">
-									<span class="code__tag"><</span>
-									<span class="code__jsTag">script</span>
-									<span class="code__jsAttr">type</span>
-									<span class="code__tag">="</span>
-									<span class="code--jsValue">text/javascript</span>
-									<span class="code--tag">"></span>
+							<ul class="textEditor__body__codeList textEditor__body__codeList--FrontEnd">
+								<li class="textEditor__body__listItem textEditor__body__listItem--comment">
+									//Add this snippet before the closing <span></</span>head> tag
 								</li>
 								<li class="textEditor__body__listItem textEditor__body__listItem--code">
-									<span class="code--tag">!</span>
-									<span class="code--jsfunc">function</span>
-									<span class="code--tag">(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){</span>
+									<span class="code--tag"><</span><span class="code--jsTag">script</span><span class="code--jsAttr"> type</span><span class="code--tag">="</span><span class="code--jsValue">text/javascript</span><span class="code--tag">"></span>
 								</li>
-								<li class="textEditor__body__listItem textEditor__body__listItem--code">  <span class="code--tag">(a[e].o=a[e].o||[]).</span><span class="code--jsMethod">push</span><span class="code--tag">(arguments)},f=b.</span><span class="code--jsMethod">createElement</span><span class="code--tag">(c),g=b.</span><span class="code--jsMethod">getElementsByTagName</span><span class="code--tag">(c)[0],</span></li>
 								<li class="textEditor__body__listItem textEditor__body__listItem--code">
-									<span class="code--tag">f.</span>
-									<span class="code--jsfunc">async</span>
-									<span class="code--tag">=</span>
-									<span class="code--jsAsyncVal">1</span>
-									<span class="code--tag">,f.src=d,g.parentNode.</span>
-									<span class="code--jsMethod">insertBefore</span>
-									<span class="code--tag">(f,g)}(window,document,</span>
-									<span class="code--jsString">"script","//cdn.raygun.io/raygun4js/</span>
-								<span class="code--tag">raygun.min.js","rg4js");</span></li>
-								<li class="textEditor__body__listItem textEditor__body__listItem--code"><span class="code--tag"><<span>/</span></span><span class="code--jsTag">script</span><span class="code--tag">></span> </li>
-								<!-- Need to widen the box of this bc the code is going on next line ( width: 1260px;)-->
+									<span class="code--tag">!</span><span class="code--jsfunc">function</span><span class="code--tag">(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){</span>
+								</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code--tag">(a[e].o=a[e].o||[]).</span><span class="code--jsValue">push</span><span class="code--tag">(arguments)},f=b.</span><span class="code--jsValue">createElement</span><span class="code--tag">(c),g=b.</span><span class="code--jsValue">getElementsByTagName</span><span class="code--tag">(c)[0],</span>
+								</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code--tag">f.</span><span class="code--jsfunc">async</span><span class="code--tag">=</span><span class="code--jsAsyncVal">1</span><span class="code--tag">,f.src=d,g.parentNode.</span><span class="code--jsValue">insertBefore</span><span class="code--tag">(f,g)}(window,document,</span>
+									<span class="code--jsString">"script"</span><span class="code--tag">,</span><span class="code--jsString">"//cdn.raygun.io/raygun4js/</span><span class="code--tag">raygun.min.js","rg4js");</span>
+								</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code--tag"><<span>/</span></span><span class="code--jsTag">script</span><span class="code--tag">></span>
+								</li>
+
 							</ul>
 						</div>
 					</div>
@@ -111,17 +104,16 @@
 
 				<!-- vertically center the steps -->
 				<div class="contentSwitcherContent serverSideContent" id="serverSideContent">
-					<div class="serverSideContent__step">
-						<p><span class="step--stepnum">Step 1</span> <span class="step--stepinstruct">Download the installer</span> </p>
-						<img src="assets/img/server-download.png" alt="Server Download">
+					<div class="serverSideContent__stepText">
+						<p class="serverSideContent__stepText--single"><span class="step--stepnum">Step 1</span> <span class="step--stepinstruct">Download the installer</span> </p>
+						<p class="serverSideContent__stepText--single"><span class="step--stepnum">Step 2</span> <span class="step--stepinstruct">Install the agent</span> </p>
+						<p class="serverSideContent__stepText--single"><span class="step--stepnum">Step 3</span> <span class="step--stepinstruct">Configure the agent</span> </p>
+
 					</div>
-					<div class="serverSideContent__step">
-						<p><span class="step--stepnum">Step 2</span> <span class="step--stepinstruct">Install the agent</span> </p>
-						<img src="assets/img/agent-setup.png" alt="Server Download">
-					</div>
-					<div class="serverSideContent__step">
-						<p><span class="step--stepnum">Step 3</span> <span class="step--stepinstruct">Configure the agent</span> </p>
-						<img src="assets/img/agent-config.png" alt="Server Download">
+					<div class="serverSideContent__stepImg">
+						<img src="assets/img/server-download.png" class="step__img step__img--serverDownload" alt="Server Download">
+						<img src="assets/img/agent-setup.png" class="step__img step__img--agentSet" alt="Agent setup">
+						<img src="assets/img/agent-config.png" class="step__img step__img--agentConfig" alt="Agent configuration">
 					</div>
 				</div>
 

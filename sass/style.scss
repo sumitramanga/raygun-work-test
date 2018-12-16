@@ -163,7 +163,7 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		font-size: 34px;
 		font-weight: 700;
 		margin: 0 auto;
-		padding-top: 3em;
+		padding-top: 2.3em;
 		width: 50%;
 	}
 
@@ -319,7 +319,14 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		font-family: monospace, monospace;
 		list-style: none;
 		padding: 1em 0 1em 3.5em;
+	}
+
+	.textEditor__body__codeList--erroAndCrashes {
 		width: 900px;
+	}
+
+	.textEditor__body__codeList--FrontEnd {
+		width: 1200px;
 	}
 
 	.textEditor__body__listItem--comment {
@@ -346,5 +353,71 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.code--value {
 		color: #FB7A31;
+	}
+
+	.code--jsTag {
+		color: #FC1E70;
+	}
+
+	.code--jsAttr {
+		color: #61D8EF;
+	}
+
+	.code--jsValue {
+		color: #E6DC6D;
+	}
+
+	.code--jsfunc {
+		color: #60D9F1;
+	}
+
+	.code--jsAsyncVal {
+		color: #AF7DFF;
+	}
+
+	.code--jsString {
+		color: #A4E406;
+	}
+
+	// Server-Side Performace --------------
+
+	.serverSideContent {
+	    margin: 0 auto;
+	    max-width: 641px;
+	}
+
+	.serverSideContent__stepText {
+		@include mainFontSettings;
+		color: #616161;
+		margin-top: 6.3em;
+	}
+
+	.serverSideContent__stepText--single {
+		display: inline-block;
+		padding: 0 1.8em;
+	}
+
+	.step--stepnum {
+		display: block;
+	}
+
+	.step--stepinstruct {
+		display: block;
+	}
+
+	.step--stepnum {
+		font-weight: 600;
+	}
+
+	.step__img--serverDownload {
+		padding: 0em 3em;
+	}
+
+	.step__img--agentSet {
+		padding: 0em 0.4em;
+	}
+
+	.step__img--agentConfig {
+		padding: 0em 1.8em;
 	}
 }
