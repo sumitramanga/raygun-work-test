@@ -143,14 +143,15 @@ $mainFontFamily: 'Open Sans', sans-serif;
 	font-weight: normal;
 }
 
-.main {
+.main__block {
 	display: none;
 }
 
 
 @media only screen and (min-width: 641px) {
-	.main {
+	.main__block {
 		background-color: #F2F7FC;
+		height: 100vh;
 		display: block;
 	}
 
@@ -277,7 +278,25 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.textEditor__body {
 		background-color: #1A2327;
-		// height: 200px;
+		width: 100%;
+        overflow-x: auto;
+	}
+
+
+	.textEditor__body::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+
+	.textEditor__body::-webkit-scrollbar-thumb {
+		background-color: #C1C1C1;
+		border-radius: 8px;
+		border: 2px solid #FFFFFF;
+	}
+
+	.textEditor__body::-webkit-scrollbar:horizontal {
+		background-color: #FFFFFF;
+		border: none;
+		height: 8px;
 	}
 
 	.textEditor__body__numberList {
@@ -295,6 +314,37 @@ $mainFontFamily: 'Open Sans', sans-serif;
 	}
 
 	.textEditor__body__codeList {
-		float: right;
+		color: #78909C;
+		font-size: 14px;
+		font-family: monospace, monospace;
+		list-style: none;
+		padding: 1em 0 1em 3.5em;
+		width: 900px;
+	}
+
+	.textEditor__body__listItem--comment {
+		color: #90A4AE;
+		padding: 0.35em 0;
+	}
+
+	.textEditor__body__listItem--code {
+		color: #90A4AE;
+		padding: 0.35em 0;
+	}
+
+	.textEditor__body__listItem--space {
+		height: 23px;
+	}
+
+	.code__tag {
+		color: #FFFFFF;
+	}
+
+	.code__attr {
+		color: #62CCD4;
+	}
+
+	.code__value {
+		color: #FB7A31;
 	}
 }

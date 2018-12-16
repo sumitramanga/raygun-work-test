@@ -42,11 +42,13 @@
 							</ul>
 
 							<ul class="textEditor__body__codeList">
-								<li class="textEditor__body__listItem"></li>
-								<li class="textEditor__body__listItem"></li>
-								<li class="textEditor__body__listItem"></li>
-								<li class="textEditor__body__listItem"></li>
-								<li class="textEditor__body__listItem"></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--comment">//In your Web.config file, find configSections and add the following entry:</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code">
+									<span class="code__tag"><</span><span class="code__tag">section</span>
+									<span class="code__attr">name</span><span class="code__tag">=</span><span class="code__value">"RaygunSettings"</span><span class="code__attr"> type</span><span class="code__tag">=</span><span lass="code__value">"Mindscape.Raygun4Net.RaygunSettings, Mindscape.Raygun4Net"</span> <span class="code__tag"> /></span></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--space"></li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--comment">//Then reference it with your API key by adding the following line after configSections</li>
+								<li class="textEditor__body__listItem textEditor__body__listItem--code"><span class="code__tag"><</span><span class="code__tag">RaygunSettings</span><span class="code__attr"> apikey</span><span class="code__tag">=</span><span class="code__value">"YOUR_APP_API_KEY"</span><span class="code__tag">/><span></li>
 							</ul>
 						</div>
 
