@@ -127,10 +127,19 @@
 	font-style: normal;
 }
 
+$mainText-color: #616161;
+$link-color: #158FEF;
+
 @mixin mainFontSettings {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	text-align: center;
+}
+
+@mixin bodyText{
+	color: $mainText-color;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .main {
@@ -144,6 +153,8 @@
 		display: block;
 	}
 
+// LANDING TEXT --------------
+
 	.landingText__title {
 		@include mainFontSettings;
 		color: #444444;
@@ -156,17 +167,17 @@
 
 	.landingText__desc {
 		@include mainFontSettings;
-		color: #616161;
-		font-size: 16px;
-		font-weight: normal;
+		@include bodyText;
 		line-height: 1.6;
 		margin: 0 auto;
 		padding: 2em 0;
 		width: 80%;
 	}
 
+// CONTENT SWITCHER -------------
+
 	.contentSwitcher {
-		margin: 0 0.7em;
+		margin: 0 0.7em 5.5em 0.7em;
 	}
 	.contentSwitcher__item {
 		cursor: pointer;
@@ -187,7 +198,7 @@
 
 	.contentSwitcher__item--unactive {
 		background-color: #FFFFFF;
-		color: #158FEF;
+		color: $link-color;
 	}
 
 	.contSwitcher__item--start {
@@ -220,5 +231,36 @@
 
 	.serverSideContent {
 		display: none;
+	}
+
+	// CONTENT SWITCHER CONTENT
+
+	.errorCrashesContent__text--second {
+		margin-bottom: 2em;
+	}
+
+	.errorCrashesContent__text {
+		@include mainFontSettings;
+		@include bodyText;
+		line-height: 1.9;
+	}
+
+	.errorCrashesContent__text--step {
+		font-weight: 600;
+	}
+
+	.errorCrashesContent__text--library {
+		color: $link-color;
+	}
+
+	.errorCrashesContent__textEditor {
+		height: 241px;
+		width: 621px;
+	}
+
+	.textEditor__head {
+		background-color: #000000;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
 	}
 }
