@@ -212,10 +212,8 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.contSwitcher__item--middle {
 		border-bottom: none;
-		// border-left: 0.01em;
 		border-left-color: #D3DCE4;
 		border-left-width: 1px;
-		// border-right: 0.01em;
 		border-right-color: #D3DCE4;
 		border-right-width: 1px;
 		border-top: none;
@@ -238,25 +236,27 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	// CONTENT SWITCHER CONTENT
 
-	.errorCrashesContent__text--second {
+	.content__text--second {
 		margin-bottom: 2em;
 	}
 
-	.errorCrashesContent__text {
+	.content__text {
 		@include mainFontSettings;
 		@include bodyText;
 		line-height: 1.9;
 	}
 
-	.errorCrashesContent__text--step {
+	.content__text--step {
 		font-weight: 600;
 	}
 
-	.errorCrashesContent__text--library {
+	.content__text--library {
 		color: $link-color;
 	}
 
-	.errorCrashesContent__textEditor {
+	// TEXT EDITOR --------------
+
+	.content__textEditor {
 		// height: 241px;
 		margin: 0 auto;
 		width: 621px;
@@ -281,7 +281,6 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		width: 100%;
         overflow-x: auto;
 	}
-
 
 	.textEditor__body::-webkit-scrollbar {
 		-webkit-appearance: none;
@@ -311,6 +310,10 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		font-weight: 900;
 		list-style-type: none;
 		padding: 0.3em 0;
+	}
+
+	.textEditor__body__list__listItem--space {
+		display: none;
 	}
 
 	.textEditor__body__codeList {
@@ -419,5 +422,80 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.step__img--agentConfig {
 		padding: 0em 1.8em;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+
+	.landingText__title {
+		width: 100%
+	}
+
+	.landingText__desc {
+		width: 800px;
+	}
+
+	.contentSwitcher {
+		height: 50px;
+		width: 990px;
+		margin: 1em auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contentSwitcher__item {
+		display: inline-block;
+		text-align: center;
+		width: 24%;
+	}
+
+	.contSwitcher__item--end{
+		float: left;
+	}
+
+	.contentSwitcherContent__textWrapper {
+	 	margin-top: 2.6em;
+		text-align: center;
+	}
+
+	.content__text {
+		display: inline-block;
+	}
+
+	.content__text--second{
+		margin-left: 0.7em;
+		margin-bottom: 1.5em;
+	}
+
+	.content__textEditor {
+		width: 970px;
+	}
+
+	.textEditor__body__list__listItem--space {
+		display: block;
+	}
+
+	.serverSideContent__stepText {
+		margin-top: 3.3em;
+	}
+
+	.serverSideContent {
+		max-width: 900px;
+	}
+
+	.serverSideContent__stepText--single {
+		padding: 0 4.7em;
+	}
+
+	.step__img--serverDownload {
+    	padding: 0em 5em;
+	}
+
+	.step__img--agentSet {
+    	padding: 0em 4em;
+	}
+
+	.step__img--agentConfig {
+    	padding: 0em 4em;
 	}
 }
