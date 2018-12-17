@@ -230,6 +230,9 @@
   .textEditor__body__listItem--space {
     height: 23px; }
 
+  .code--tab {
+    padding: 0 0.6em; }
+
   .code--tag {
     color: #FFFFFF; }
 
