@@ -151,7 +151,7 @@ $mainFontFamily: 'Open Sans', sans-serif;
 @media only screen and (min-width: 641px) {
 	.main__block {
 		background-color: #F2F7FC;
-		height: 100vh;
+		height: 100%;
 		display: block;
 	}
 
@@ -252,6 +252,7 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.content__text--library {
 		color: $link-color;
+		cursor: pointer;
 	}
 
 	// TEXT EDITOR --------------
@@ -260,6 +261,7 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		// height: 241px;
 		margin: 0 auto;
 		width: 621px;
+		margin-bottom: 6em;
 	}
 
 	.textEditor__head {
@@ -278,8 +280,8 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.textEditor__body {
 		background-color: #1A2327;
-		width: 100%;
         overflow-x: auto;
+		width: 100%;
 	}
 
 	.textEditor__body::-webkit-scrollbar {
@@ -295,7 +297,7 @@ $mainFontFamily: 'Open Sans', sans-serif;
 	.textEditor__body::-webkit-scrollbar:horizontal {
 		background-color: #FFFFFF;
 		border: none;
-		height: 8px;
+		height: 14px;
 	}
 
 	.textEditor__body__numberList {
@@ -412,6 +414,10 @@ $mainFontFamily: 'Open Sans', sans-serif;
 		font-weight: 600;
 	}
 
+	.serverSideContent__stepImg {
+		padding-bottom: 6em;
+	}
+
 	.step__img--serverDownload {
 		padding: 0em 3em;
 	}
@@ -497,5 +503,13 @@ $mainFontFamily: 'Open Sans', sans-serif;
 
 	.step__img--agentConfig {
     	padding: 0em 4em;
+	}
+
+	.content__textEditor {
+		margin-bottom: 5em;
+	}
+
+	.serverSideContent__stepImg {
+		padding-bottom: 5em;
 	}
 }

@@ -64,7 +64,7 @@
 @media only screen and (min-width: 641px) {
   .main__block {
     background-color: #F2F7FC;
-    height: 100vh;
+    height: 100%;
     display: block; }
 
   .landingText__title {
@@ -153,11 +153,13 @@
     font-weight: 600; }
 
   .content__text--library {
-    color: #158FEF; }
+    color: #158FEF;
+    cursor: pointer; }
 
   .content__textEditor {
     margin: 0 auto;
-    width: 621px; }
+    width: 621px;
+    margin-bottom: 6em; }
 
   .textEditor__head {
     background-color: #000000;
@@ -173,8 +175,8 @@
 
   .textEditor__body {
     background-color: #1A2327;
-    width: 100%;
-    overflow-x: auto; }
+    overflow-x: auto;
+    width: 100%; }
 
   .textEditor__body::-webkit-scrollbar {
     -webkit-appearance: none; }
@@ -187,7 +189,7 @@
   .textEditor__body::-webkit-scrollbar:horizontal {
     background-color: #FFFFFF;
     border: none;
-    height: 8px; }
+    height: 14px; }
 
   .textEditor__body__numberList {
     float: left;
@@ -279,6 +281,9 @@
   .step--stepnum {
     font-weight: 600; }
 
+  .serverSideContent__stepImg {
+    padding-bottom: 6em; }
+
   .step__img--serverDownload {
     padding: 0em 3em; }
 
@@ -342,6 +347,12 @@
     padding: 0em 4em; }
 
   .step__img--agentConfig {
-    padding: 0em 4em; } }
+    padding: 0em 4em; }
+
+  .content__textEditor {
+    margin-bottom: 5em; }
+
+  .serverSideContent__stepImg {
+    padding-bottom: 5em; } }
 
 /*# sourceMappingURL=style.css.map */
